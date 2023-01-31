@@ -1,0 +1,157 @@
+body {
+}
+
+#hide_button {
+    display: block;
+    text-align: right;
+}
+
+#hide_button_container {
+    text-align: right;
+    margin: 0;
+    margin-right: 0.2em;
+}
+
+#hide_button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 1em;
+  height: 0.2em;
+  background-color: #000;
+  margin: 0.1em 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 0.282em) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -0.282em) rotate(45deg);
+}
+
+#settings_container {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    opacity: 0.3;
+}
+
+#settings_container:hover, #settings_container:has(:focus), #settings_container:has(:active) {
+    opacity: 1;
+}
+
+#settings_container fieldset {
+    width: 22em;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.5em;
+}
+
+#settings_container input[type="number"] {
+    width: 5em;
+}
+
+#settings_container #colors {
+}
+#settings_container #colors span {
+    display: inline-block;
+}
+#settings_container #colors span label {
+    display: inline-block;
+    text-align: right;
+    padding-right: 0.5em;
+    width: 7em;
+}
+
+#settings_container #draw #cirlce_radius_container {
+    display: block;
+}
+
+#settings_container #draw span:not(#cirlce_radius_container) {
+    display: inline-block;
+}
+
+#settings_container #draw span:not(#cirlce_radius_container) label {
+    display: inline-block;
+    width: 9em;
+    text-align: right;
+}
+
+#settings_container #draw span:has(#clear_button) {
+    display: block;
+}
+
+#settings_container #json label {
+    display: none;
+}
+
+#settings_container #json textarea {
+    display: block;
+    width: 100%;
+    height: 5em;
+}
+
+#settings_container #search span {
+    display: inline-block;
+}
+
+#settings_container #search span:has(#animation_speed) {
+    width: 10em;
+}
+
+#settings_container #search span:has(#animation_speed) label {
+    display: block;
+}
+
+#settings_container #search span:has(#animation_speed) {
+    display: block;
+}
+
+#circlefield_container {
+    width: 80em;
+    display: block;
+}
+
+fieldset.infos {
+    border-radius: 0.5em;
+    padding: 0.2em;
+    display: inline-block;
+}
+
+fieldset.infos:has(#stats) {
+    float: left;
+    margin-right: 2em;
+}
+
+#stats {
+    display: table;
+}
+#stats div {
+    display: table-row;
+}
+#stats div span {
+    display: table-cell;
+    padding: 0.2em;
+}
+#stats div span:nth-child(1) {
+    padding-right: 1em;
+}
+
+#details .caption {
+    display: inline-block;
+    width:5em;
+}
+#details table td {
+    padding: 0.1em;
+}
+
+footer {
+    margin: 3em;
+    font-size: 0.7em;
+    text-align: center;
+}

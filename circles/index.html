@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tiptoe through Circles</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+<style>
+</style>
+    </head>
+    <body>
+        <div id="description">
+            <h1><a href="https://www.codewars.com/kata/58b617f15705ae68cc0000a9/train/python">Codewars - [1 kyu] Tiptoe through the circles</a></h1>
+        </div>
+        <div id="settings_container">
+            <div id="hide_button_container">
+                <div id="hide_button" class="change">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <fieldset id="colors">
+                <legend>Colors</legend> 
+                <span><label for="color_normal">Fill</label><input id="color_normal" type="color" value="#ccffcc"></span>
+                <span><label for="color_border_normal">Border</label><input id="color_border_normal" type="color" value="#226622"></span>
+                <span><label for="color_visited">Fill (visited)</label><input id="color_visited" type="color" value="#99ff77"></span>
+                <span><label for="color_border_visited">Border (visited)</label><input id="color_border_visited" type="color" value="#226622"></span>
+                <span><label for="color_path">Path</label><input id="color_path" type="color" value="#ff0000"></span>
+                <span><label for="color_edges">Edges</label><input id="color_edges" type="color" value="#333333"></span>
+                <span><label for="color_start">Start</label><input id="color_start" type="color" value="#ff0000"></span>
+                <span><label for="color_end">End</label><input id="color_end" type="color" value="#0000ff"></span>
+            </fieldset>
+            <fieldset id="dimensions">
+                <legend>Dimensions</legend>
+                <span>
+                    <label for="dimensions_width">Width</label>
+                    <input type="number" id="dimensions_width" value="-1">
+                    <label for="dimensions_height">Height</label>
+                    <input type="number" id="dimensions_height" value="-1">
+                </span>
+            </fieldset>
+            <fieldset id="display">
+                <legend>Display</legend>
+                <span>
+                    <label for="show_path">Path</label>
+                    <input type="checkbox" id="show_path" checked>
+                </span>
+                <span>
+                    <label for="show_sighted">Sighted</label>
+                    <input type="checkbox" id="show_sighted" checked>
+                </span>
+                <span>
+                    <label for="show_edges">Edges</label>
+                    <input type="checkbox" id="show_edges" checked>
+                </span>
+            </fieldset>
+            <fieldset id="generator">
+                <legend>Random circles</legend>
+                <span><label for="max_radius">Max. Radius</label><input id="max_radius" type="number" value="100"></span>
+                <span><label for="count">Count</label><input id="count" type="number" value="40"></span>
+                <span><input type="submit" id="generate_button" value="Generate"></span>
+            </fieldset>
+            <fieldset id="draw">
+                <legend>Draw</legend>
+                <span id="cirlce_radius_container">
+                    <label for="circle_radius">Radius</label>
+                    <input type="range" id="circle_radius"  min="0.1" max="100" step="0.5" value="30">
+                </span>
+                <span>
+                    <label for="add_circle">Add circle</label>
+                    <input type="radio" name="click_action" id="add_circle">
+                </span>
+                <span>
+                    <label for="remove_circle">Remove circle</label>
+                    <input type="radio" name="click_action" id="remove_circle">
+                </span>
+                <span>
+                    <label for="set_start">Set start point</label>
+                    <input type="radio" name="click_action" id="set_start">
+                </span>
+                <span>
+                    <label for="set_end">Set end point</label>
+                    <input type="radio" name="click_action" id="set_end">
+                </span>
+                <span>
+                    <label for="get_info">Get Info</label>
+                    <input type="radio" name="click_action" id="get_info" checked>
+                </span>
+                <span>
+                    <input type="reset" id="clear_button" value="Clear">
+                </span>
+            </fieldset>
+            <fieldset id="json">
+                <legend>JSON</legend>
+                <label for="circles_json">JSON</label>
+                <textarea id="circles_json"></textarea>
+                <span>
+                    <input type="submit" id="circles_json_submit" value="Submit">
+                    <input type="reset" id="circles_json_reset" value="Reset">
+                </span>
+            </fieldset>
+            <fieldset id="search">
+                <legend>Search</legend>
+                <span>
+                    <input type="submit" id="find_path_button" value="Find Path">
+                </span>
+                <span>
+                    <label for="animation_speed">Animation speed</label>
+                    <input type="range" min="0" max="1000" step="1" id="animation_speed" value="500">
+                </span>
+                <span>
+                    <input type="submit" id="next_iteration" value="Next step">
+                </span>
+            </fieldset>
+        </div>
+        <div id="circlefield_container">
+            <canvas id="circlefield">You need to enable JavaScript to use this page</canvas>
+        </div>
+        <fieldset class="infos">
+            <legend>Search infos</legend>
+            <div id="stats">
+                <div>
+                    <span id="stats_search_running">No running</span>
+                    <span id="stats_search_success">0</span>
+                </div>
+                <div>
+                    <span>Iteration steps</span>
+                    <span id="stats_iterations">0</span>
+                </div>
+                <div>
+                    <span>Edges calculated</span>
+                    <span id="stats_edges_calculated">0</span>
+                </div>
+                <div>
+                    <span>Edges considered</span>
+                    <span id="stats_edges_sighted">0</span>
+                </div>
+                <div>
+                    <span>Circles</span>
+                    <span id="stats_circles">0</span>
+                </div>
+                <div>
+                    <span>Expanded circles</span>
+                    <span id="stats_circles_expanded">0</span>
+                </div>
+                <div>
+                    <span>Path length</span>
+                    <span id="stats_path_length">0</span>
+                </div>
+                <div>
+                    <span>Path nodes</span>
+                    <span id="stats_path_nodes">0</span>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="infos">
+            <legend>Details</legend>
+            <div id="details">
+                Click on a circle to show details. Make sure "Get Info" is selected in the "Draw" section.
+            </div>
+        </fieldset>
+        <script src="./tiptoe.js"></script>
+        <script>
+            let elements = document.querySelectorAll("#settings_container > fieldset");
+            let original_display = elements[0].style.display;
+            let hideButton = document.getElementById("hide_button");
+            document.getElementById("hide_button").onclick = function(ev) {
+                elements.forEach(e => {
+                    if (e.style.display == "none") {
+                        e.style.display = original_display;
+                        hideButton.classList.add("change");
+                    } else {
+                        e.style.display = "none";
+                        hideButton.classList.remove("change");
+                    }
+                });
+            }
+        </script>
+        <footer>
+            Copyright, 2023, Bodo Akdeniz
+        </footer>
+    </body>
+</html>
