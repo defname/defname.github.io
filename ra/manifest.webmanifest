@@ -1,1 +1,1 @@
-{"name":"risk-assessment","short_name":"risk-assessment","start_url":"/ra/","display":"standalone","background_color":"#ffffff","lang":"en","scope":"/ra/"}
+{"name":"Name App","short_name":"Short Name","start_url":"/ra/","display":"standalone","background_color":"#ffffff","lang":"en","scope":"/ra/","description":"Description","orientation":"any","theme_color":"#ffffff","icons":[{"src":"assets/logo.svg","sizes":"192x192","type":"image/svg+xml"},{"src":"assets/logo.svg","sizes":"512x512","type":"image/svg+xml"}]}
