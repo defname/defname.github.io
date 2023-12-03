@@ -1,1 +1,0 @@
-{"name":"Name App","short_name":"Short Name","start_url":"/","display":"standalone","background_color":"#ffffff","lang":"en","scope":"/","description":"Description","orientation":"any","theme_color":"#ffffff","icons":[{"src":"pwa/icon.png","sizes":"144x144","type":"image/png"}]}
