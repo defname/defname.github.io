@@ -1,1 +1,1 @@
-{"name":"Gefährdungsbeurteilung","short_name":"Gefährdungsbeurteilung","start_url":"/ra/","display":"standalone","background_color":"#ffffff","lang":"en","scope":"/ra/","description":"Tool zum Erstellen von Gefährdungsbeurteilungen für SZP Baustellen","orientation":"any","theme_color":"#ffffff","icons":[{"src":"pwa/icon.png","sizes":"144x144","type":"image/png"}]}
+{"name":"test","short_name":"test","start_url":"/","display":"standalone","background_color":"#ffffff","lang":"en","scope":"/"}
