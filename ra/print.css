@@ -2,6 +2,7 @@ h1 {
     page-break-before: always;
 }
 
-* {
-    color: red;
+
+tr {
+    border-top: 1px solid #000;
 }
