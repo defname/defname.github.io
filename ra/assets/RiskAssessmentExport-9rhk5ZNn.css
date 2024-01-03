@@ -1,0 +1,1 @@
+@media print{*{display:none}#print,:has(#print){display:block}#print *{display:initial}#print h1,#print h2,#print h3,#print h4,#print h5,#print div,#print p{display:block}}
