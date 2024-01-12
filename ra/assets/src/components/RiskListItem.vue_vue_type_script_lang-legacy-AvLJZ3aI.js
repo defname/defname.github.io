@@ -1,0 +1,1 @@
+System.register(["../../vendor-legacy-1yjrExH1.js","../composables/riskcatalog-legacy-Sa3DPN9n.js"],(function(e,t){"use strict";var o,s,r,n,a;return{setters:[e=>{o=e.W,s=e.X,r=e.am,n=e.aY},e=>{a=e.R}],execute:function(){e("_",{components:{IonItem:o,IonLabel:s,IonNote:r,IonText:n},props:{risk:{type:a,required:!0}}})}}}));

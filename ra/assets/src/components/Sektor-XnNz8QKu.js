@@ -1,0 +1,1 @@
+import{_ as t}from"./Sektor.vue_vue_type_script_lang-F17CIM74.js";import{_ as o}from"../../plugin-vue_export-helper-x3n3nnut.js";import{Q as s}from"../../vendor-fe-4Mo55.js";function a(e,_,n,p,c,r){return s(r.asString)}const S=o(t,[["render",a]]);export{S};

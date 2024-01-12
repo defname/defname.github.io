@@ -1,0 +1,1 @@
+System.register(["../../vendor-legacy-1yjrExH1.js"],(function(e,c){"use strict";var s,t,n,r,u,o;return{setters:[e=>{s=e.y,t=e.C,n=e.D,r=e.u,u=e.S,o=e.T}],execute:function(){e("_",s({__name:"Checkmark",setup:e=>(e,c)=>(t(),n(r(o),{class:"checkmark",slot:"end",color:"success",icon:r(u)},null,8,["icon"]))}))}}}));
