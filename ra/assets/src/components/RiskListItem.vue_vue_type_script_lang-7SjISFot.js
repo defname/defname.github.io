@@ -1,1 +1,0 @@
-import{W as o,X as s,am as a,aY as e}from"../../vendor-fe-4Mo55.js";import{R as r}from"../composables/riskcatalog-hVdw2NQQ.js";const n={components:{IonItem:o,IonLabel:s,IonNote:a,IonText:e},props:{risk:{type:r,required:!0}}};export{n as _};

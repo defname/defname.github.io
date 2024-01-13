@@ -1,1 +1,0 @@
-import{y as e,C as o,D as s,u as c,S as n,T as a}from"../../vendor-fe-4Mo55.js";const m=e({__name:"Checkmark",setup(r){return(t,_)=>(o(),s(c(a),{class:"checkmark",slot:"end",color:"success",icon:c(n)},null,8,["icon"]))}});export{m as _};

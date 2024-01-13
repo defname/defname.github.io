@@ -1,1 +1,0 @@
-import{_ as e}from"./Map.vue_vue_type_script_lang-e-_ArMu_.js";import{_ as o}from"../../plugin-vue_export-helper-x3n3nnut.js";import{C as t,J as r}from"../../vendor-fe-4Mo55.js";const s={id:"map-element",class:"map"};function a(c,p,n,_,m,i){return t(),r("div",s)}const $=o(e,[["render",a]]);export{$ as M};

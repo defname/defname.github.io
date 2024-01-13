@@ -1,1 +1,0 @@
-import{S as r}from"../composables/database-EV4tUyzx.js";const s={props:{sector:{type:String,required:!0},short:Boolean},computed:{asString(){return this.sector===r.Access?this.short?"Z":"Zugang":this.sector===r.Environment?this.short?"U":"Umgebung":this.sector===r.Work?this.short?"A":"Arbeit":(console.warn("Unknown sector"),this.short?"?":"???")}}};export{s as _};

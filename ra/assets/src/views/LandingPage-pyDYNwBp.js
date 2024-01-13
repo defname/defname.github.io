@@ -1,1 +1,0 @@
-import{_ as o}from"./LandingPage.vue_vue_type_script_setup_true_lang-fgoMPGXK.js";import"../components/TemplateMainPage.vue_vue_type_script_setup_true_lang-XxHgkime.js";import"../../vendor-fe-4Mo55.js";import"../../vite/preload-helper-vhsIVEOe.js";export{o as default};

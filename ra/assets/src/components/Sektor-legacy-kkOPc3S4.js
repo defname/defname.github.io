@@ -1,1 +1,0 @@
-System.register(["./Sektor.vue_vue_type_script_lang-legacy-TtoiBAFV.js","../../plugin-vue_export-helper-legacy-ZLWq2F6x.js","../../vendor-legacy-1yjrExH1.js"],(function(e,r){"use strict";var t,n,s;return{setters:[e=>{t=e._},e=>{n=e._},e=>{s=e.Q}],execute:function(){e("S",n(t,[["render",function(e,r,t,n,u,c){return s(c.asString)}]]))}}}));
