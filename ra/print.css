@@ -1,0 +1,76 @@
+@page {
+    page: A4 portrait;
+    margin-top: 2cm;
+    margin-bottom: 3cm;
+    margin-left: 2.5cm;
+    margin-right: 2.5cm;
+}
+
+body {
+    border-collapse: collapse;
+    width: 230mm;
+    text-align: justify;
+    color: #000;
+    background: #fff;
+}
+@media screen {
+    body {
+        background: #eee;
+    }
+    #print {
+        padding-top: 2cm;
+        padding-bottom: 3cm;
+        padding-left: 2.5cm;
+        padding-right: 2.5cm;
+        position:relative;
+    }
+}
+
+#print {
+    width: 230mm;
+    background: #fff
+}
+
+h1 {
+    break-before: page;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #167bff;
+    font-variant: small-caps;
+}
+
+table {
+    border-spacing: 0.2cm;
+    border-collapse: collapse;
+    min-width: 15cm;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+thead th {
+    font-variant: small-caps;
+}
+
+tbody th {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    font-size: 0.8em;
+}
+
+td, th {
+    padding: 0.2cm;
+}
+td:first-child {
+    padding-right: 1cm;
+}
+tbody tr:nth-child(2n+1) {
+    background: #eeeeee1b;
+}
+tbody tr:nth-child(2n) {
+    background: #167bff12;
+}
+
+.factor {
+    font-size: 0.7em;
+    display: block;
+}
